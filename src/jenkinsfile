@@ -1,16 +1,10 @@
 pipeline {
-  agent { 
-    docker { 
-      image 'mcr.microsoft.com/playwright:v1.19.2-focal'
-    } 
-  }
   stages {    
     stage('tests') {
       steps {
         dir('src') {          
             sh '''          
-              npm install
-              npm strt
+            echo "Hello World" 
             '''          
         }  
       }    
